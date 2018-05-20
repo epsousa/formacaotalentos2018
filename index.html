@@ -1,196 +1,277 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">		
-		<style>
-			body {
-				background-image: url("bb.jpg");
-			}
-		</style>
-	</head>
-	<body>
-		<nav class="navbar navbar-default navbar-fixed-top">
-		  <div class="container">
+
+<head>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	 crossorigin="anonymous"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	 crossorigin="anonymous"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	 crossorigin="anonymous">
+	<style>
+		body {
+			background-image: url("bb.jpg");
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
 			<div class="navbar-header">
-			  <a class="navbar-brand" href="#">RMSITE</a>
+				<a class="navbar-brand" href="#">RMSITE</a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
-			  <ul class="nav navbar-nav">
-				<li id="mnAula0" class="active" style="cursor:pointer" onclick="mudarAula(0)"><a>Aba 0</a></li>
-				<li id="mnAula1" class="" style="cursor:pointer" onclick="mudarAula(1)"><a>Aba 1</a></li>
-				<li id="mnAula2" class="" style="cursor:pointer" onclick="mudarAula(2)"><a>Aba 2</a></li>
-				<li id="mnAula3" class="" style="cursor:pointer" onclick="mudarAula(3)"><a>Aba 3</a></li>
-				<li id="mnAula4" class="" style="cursor:pointer" onclick="mudarAula(4)"><a>Aba 4</a></li>
-			  </ul>
-			</div><!--/.nav-collapse -->
-		  </div>
-		</nav>
-		<div class="container">			
-			<div class="jumbotron jumbo-aux">
-				<h1>Breaking Bad Site!</h1>
-				<p>Um texto qualquer falando sobre o curso e o que vamos aprender!</p>
+				<ul class="nav navbar-nav">
+					<li id="mnAula0" class="active" style="cursor:pointer" onclick="mudarAula(0)">
+						<a>Aba 0</a>
+					</li>
+					<li id="mnAula1" class="" style="cursor:pointer" onclick="mudarAula(1)">
+						<a>Aba 1</a>
+					</li>
+					<li id="mnAula2" class="" style="cursor:pointer" onclick="mudarAula(2)">
+						<a>Aba 2</a>
+					</li>
+					<li id="mnAula3" class="" style="cursor:pointer" onclick="mudarAula(3)">
+						<a>Aba 3</a>
+					</li>
+					<li id="mnAula4" class="" style="cursor:pointer" onclick="mudarAula(4)">
+						<a>Aba 4</a>
+					</li>
+				</ul>
 			</div>
-
-			<div id="divAula0">
-				<div id="divFormAula0" class="div-aux">
-					<!-- <div id="includeDivElementos"></div> -->
-					<iframe src="./Lista de elementos do HTML5 - HTML _ MDN.html" frameborder="0" height="500" width="100%"></iframe>
-				</div>
-			</div>
-			
-			<!-- **** ATIVIDADES 1ª AULA **** -->
-			<div id="divAula1" style="display:none">
-				<form id="form1" name="form1">
-					<div id="divFormAula2" class="div-aux">
-						<h1>Formulário de endereço</h1>
-						<hr />
-						<div class="row">
-							<div class="col-md-2">
-								<label for="corEscolhida">Selecione uma cor:</label>
-								<input id="corEscolhida" type="color" class="form-control" style="width:60px" onchange="mudarCorBackground(this)" />
-							</div>
-						</div>
-						<br />
-						<br />
-						<div class="row">
-							<div class="col-md-12">
-								<button id="btnSpoiler" type="button" class="btn btn-warning">SPOILER!!!</button>
-							</div>
-							<div class="col-md-12">
-								<span id="spanSpoiler" style="display:none;color:red;font-weight:bold">Evair não sabe JavaScript! O:</span>
-							</div>
-						</div>
-						<br />
-						<br />
-						<div class="row">
-							<div class="col-md-4">
-								<label for="txtCpf">CPF:</label>
-								<input type="text" id="txtCpf" name="txtCpf" maxlength="14" onKeyDown="Mascara(this,Cpf);" onKeyPress="Mascara(this,Cpf);" onKeyUp="Mascara(this,Cpf);validaCpf(this)" />
-								<div id="divErradoCerto" style="display:inline"></div>
-							</div>
-						</div>
-						<br />
-						<br />
-						<div class="row">
-							<div class="col-md-4">
-								<label for="txtEmail">E-Mail:</label>
-								<input type="e-mail" id="txtEmail" name="txtEmail" onblur="validaEmail(this);" />
-							</div>
-						</div>
-						<br />
-						<br />
-						<div class="row">
-							<div class="col-md-3">
-								<label for="txtCep">CEP:</label><br />
-								<input class="form-control" maxlength="8" type="text" id="txtCep" name="txtCep" onkeyup="verificaCepNulo(this)" onblur="buscaCep(this)" style="display:inline;width:85%" />
-								&nbsp;<img id="imgLoad" src="spinner.gif" style="width:20px;height:20px;display:none" />
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<label for="txtEstado">Estado:</label><br />
-								<input class="form-control" type="text" id="txtEstado" name="txtEstado" />
-							</div>
-							<div class="col-md-3">
-								<label for="txtCidade">Cidade:</label><br />
-								<input class="form-control" type="text" id="txtCidade" name="txtCidade" />
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<label for="txtBairro">Bairro:</label><br />
-								<input class="form-control" type="text" id="txtBairro" name="txtBairro" />
-							</div>
-							<div class="col-md-3">
-								<label for="txtRua">Rua:</label><br />
-								<input class="form-control" type="text" id="txtRua" name="txtRua" />
-							</div>
-						</div>
-					</div>
-				</form>
-			</div>
-			<!-- **** FIM ATIVIDADES 1ª AULA **** -->
-
-			<!-- **** ATIVIDADES 2ª AULA **** -->
-			<div id="divAula2" style="display:none">
-				<form id="form2" name="form2">
-					<div id="" class="div-aux">
-						<button type="button" class="btn btn-default" onclick="alert('Hello World!');EscreveLog('Hello World!')">Que isso?</button>
-						<br />
-						<br />
-						<br />
-						<div class="row">
-							<div class="col-md-12">
-							Data de Nascimento: <br />
-							</div>
-							<div class="col-md-2">
-								<input type="date" name="dataNascimento" class="form-control" />
-							</div>
-							<div class="col-md-2">
-								<button type="button" class="btn btn-primary" onclick="calcIdade(window.document.form1.dataNascimento)">Calcular!</button>
-							</div>
-						</div>
-					</div>
-				</form>
-			</div>
-			<!-- **** FIM ATIVIDADES 2ª AULA **** -->
-			
-			<!-- **** ATIVIDADES 3ª AULA **** -->
-			<div id="divAula3" style="display:none">			
-				<button class="btn btn-aux" onclick="toggleForm()"><i class="fa fa-exchange" aria-hidden="true"></i></button>
-				<div id="formDiv" class="div-aux">
-					<form onsubmit="save(event)">
-						<input type="hidden" name="idHidden" id="idHidden"/>
-						<div class="form-group">
-							<label for="nomeTxt">Nome</label>
-							<input type="text" id="nomeTxt" name="nomeTxt" placeholder="Nome do episodio" class="form-control" required>											
-						</div>
-						<div class="form-group">
-							<label for="descricaoTxt">Descrição</label>
-							<textarea class="form-control" id="descricaoTxt" name="descricaoTxt" placeholder="Descrição do episodio" rows="4" cols="50" required></textarea>
-						</div>
-						<div class="form-group">
-							<label for="temporadaNumber"> Temporada </label>
-							<input type="number" name="temporadaNumber" id="temporadaNumber" placeholder="Número da Temporada" class="form-control" required/>
-						</div>
-						<div class="form-group">
-							<label for="episodioNumber">Episodio</label>
-							<input type="number" name="episodioNumber" id="episodioNumber" placeholder="Número do Episodio" class="form-control" required/>
-						</div>
-						<div class="form-group">
-							<label for="lancamentoDate">Data de lançamento</label>
-							<input type="date" name="lancamentoDate" id="lancamentoDate" placeholder="Data de lançamento" class="form-control" required/>
-						</div>
-						<div class="form-group">
-							<input type="submit" class="btn btn-primary"/>
-							<input type="reset"  onclick="limpaCampos()" class="btn btn-warning"/>
-						</div>
-					</form>
-				</div>
-				<div id="tableDiv" class="div-aux" style="display:none">
-					<table id="tableEpisodios" class="table">
-						<thead>
-							<tr><th>Nome do Episodio</th><th>Data de Lançamento</th><th>Temporada</th><th>Episodio</th></tr>
-						</thead>
-						<tbody>						
-						</tbody>
-					</table>
-				</div>
-			</div>
-			<!-- **** FIM ATIVIDADES 3ª AULA **** -->
-			<!-- **** ATIVIDADES 4ª AULA **** -->
-			<div id="divAula4" style="display:none">			
-				<div  class="div-aux">
-
-				</div>
-			</div>
-			<!-- **** ATIVIDADES 4ª AULA **** -->
-		
+			<!--/.nav-collapse -->
 		</div>
-	</body>	
-	<script src="./index.js"></script>
-	<link href="./index.css" rel="stylesheet"></link>
+	</nav>
+	<div class="container">
+		<div class="jumbotron jumbo-aux">
+			<h1>Breaking Bad Site!</h1>
+			<p>Um texto qualquer falando sobre o curso e o que vamos aprender!</p>
+		</div>
+
+		<div id="divAula0">
+			<div id="divFormAula0" class="div-aux">
+				<!-- <div id="includeDivElementos"></div> -->
+				<iframe src="./Lista de elementos do HTML5 - HTML _ MDN.html" frameborder="0" height="500" width="100%"></iframe>
+			</div>
+		</div>
+
+		<!-- **** ATIVIDADES 1ª AULA **** -->
+		<div id="divAula1" style="display:none">
+			<form id="form1" name="form1">
+				<div id="divFormAula2" class="div-aux">
+					<h1>Formulário de endereço</h1>
+					<hr />
+					<div class="row">
+						<div class="col-md-2">
+							<label for="corEscolhida">Selecione uma cor:</label>
+							<input id="corEscolhida" type="color" class="form-control" style="width:60px" onchange="mudarCorBackground(this)" />
+						</div>
+					</div>
+					<br />
+					<br />
+					<div class="row">
+						<div class="col-md-12">
+							<button id="btnSpoiler" type="button" class="btn btn-warning">SPOILER!!!</button>
+						</div>
+						<div class="col-md-12">
+							<span id="spanSpoiler" style="display:none;color:red;font-weight:bold">Evair não sabe JavaScript! O:</span>
+						</div>
+					</div>
+					<br />
+					<br />
+					<div class="row">
+						<div class="col-md-4">
+							<label for="txtCpf">CPF:</label>
+							<input type="text" id="txtCpf" name="txtCpf" maxlength="14" onKeyDown="Mascara(this,Cpf);" onKeyPress="Mascara(this,Cpf);"
+							 onKeyUp="Mascara(this,Cpf);validaCpf(this)" />
+							<div id="divErradoCerto" style="display:inline"></div>
+						</div>
+					</div>
+					<br />
+					<br />
+					<div class="row">
+						<div class="col-md-4">
+							<label for="txtEmail">E-Mail:</label>
+							<input type="e-mail" id="txtEmail" name="txtEmail" onblur="validaEmail(this);" />
+						</div>
+					</div>
+					<br />
+					<br />
+					<div class="row">
+						<div class="col-md-3">
+							<label for="txtCep">CEP:</label>
+							<br />
+							<input class="form-control" maxlength="8" type="text" id="txtCep" name="txtCep" onkeyup="verificaCepNulo(this)" onblur="buscaCep(this)"
+							 style="display:inline;width:85%" /> &nbsp;
+							<img id="imgLoad" src="spinner.gif" style="width:20px;height:20px;display:none" />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<label for="txtEstado">Estado:</label>
+							<br />
+							<input class="form-control" type="text" id="txtEstado" name="txtEstado" />
+						</div>
+						<div class="col-md-3">
+							<label for="txtCidade">Cidade:</label>
+							<br />
+							<input class="form-control" type="text" id="txtCidade" name="txtCidade" />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<label for="txtBairro">Bairro:</label>
+							<br />
+							<input class="form-control" type="text" id="txtBairro" name="txtBairro" />
+						</div>
+						<div class="col-md-3">
+							<label for="txtRua">Rua:</label>
+							<br />
+							<input class="form-control" type="text" id="txtRua" name="txtRua" />
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- **** FIM ATIVIDADES 1ª AULA **** -->
+
+		<!-- **** ATIVIDADES 2ª AULA **** -->
+		<div id="divAula2" style="display:none">
+			<form id="form2" name="form2">
+				<div id="" class="div-aux">
+					<button type="button" class="btn btn-default" onclick="alert('Hello World!');EscreveLog('Hello World!')">Que isso?</button>
+					<br />
+					<br />
+					<br />
+					<div class="row">
+						<div class="col-md-12">
+							Data de Nascimento:
+							<br />
+						</div>
+						<div class="col-md-2">
+							<input type="date" name="dataNascimento" class="form-control" />
+						</div>
+						<div class="col-md-2">
+							<button type="button" class="btn btn-primary" onclick="calcIdade(window.document.form1.dataNascimento)">Calcular!</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- **** FIM ATIVIDADES 2ª AULA **** -->
+
+		<!-- **** ATIVIDADES 3ª AULA **** -->
+		<div id="divAula3" style="display:none">
+			<button class="btn btn-aux" onclick="toggleForm()">
+				<i class="fa fa-exchange" aria-hidden="true"></i>
+			</button>
+			<div id="formDiv" class="div-aux">
+				<form onsubmit="save(event)">
+					<input type="hidden" name="idHidden" id="idHidden" />
+					<div class="form-group">
+						<label for="nomeTxt">Nome</label>
+						<input type="text" id="nomeTxt" name="nomeTxt" placeholder="Nome do episodio" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label for="descricaoTxt">Descrição</label>
+						<textarea class="form-control" id="descricaoTxt" name="descricaoTxt" placeholder="Descrição do episodio" rows="4" cols="50"
+						 required></textarea>
+					</div>
+					<div class="form-group">
+						<label for="temporadaNumber"> Temporada </label>
+						<input type="number" name="temporadaNumber" id="temporadaNumber" placeholder="Número da Temporada" class="form-control" required/>
+					</div>
+					<div class="form-group">
+						<label for="episodioNumber">Episodio</label>
+						<input type="number" name="episodioNumber" id="episodioNumber" placeholder="Número do Episodio" class="form-control" required/>
+					</div>
+					<div class="form-group">
+						<label for="lancamentoDate">Data de lançamento</label>
+						<input type="date" name="lancamentoDate" id="lancamentoDate" placeholder="Data de lançamento" class="form-control" required/>
+					</div>
+					<div class="form-group">
+						<input type="submit" class="btn btn-primary" />
+						<input type="reset" onclick="limpaCampos()" class="btn btn-warning" />
+					</div>
+				</form>
+			</div>
+			<div id="tableDiv" class="div-aux" style="display:none">
+				<table id="tableEpisodios" class="table">
+					<thead>
+						<tr>
+							<th>Nome do Episodio</th>
+							<th>Data de Lançamento</th>
+							<th>Temporada</th>
+							<th>Episodio</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- **** FIM ATIVIDADES 3ª AULA **** -->
+		<!-- **** ATIVIDADES 4ª AULA **** -->
+		<div id="divAula4" style="display:none">
+			<div class="div-aux">
+				<form action="">
+					<label for="texto1">Nome do ep:</label>
+					<input type="text" name="texto1" id="texto1" required>
+					<br>
+					<br>
+					<label for="numero1">Numero do ep:</label>
+					<input type="number" name="numero1" id="numero1" required>
+					<br>
+					<br>
+					<label for="dataEp">Data do ep:</label>
+					<input type="date" name="dataEp" id="dataEp" required>
+					<br>
+					<br>
+					<label for="nota" style="float:left">Nota:</label>
+					<div style="width:30%; float:left">
+						<input type="range" name="nota" id="nota" min="0" max="10" list="tickmarks">
+					</div>
+					<br>
+					<br>
+					<label for="again">Assistiria denovo?</label>
+					<input type="radio" name="again" id="again1" value="sim" checked> Sim
+					<input type="radio" name="again" id="again2" value="nao"> Não
+					<br>
+					<br>
+					<label for="pontosFortes">Pontos fortes</label>
+					<input type="checkbox" name="engracado" id="engracado"> Engraçado
+					<input type="checkbox" name="dramatico" id="dramatico"> Dramatico
+					<input type="checkbox" name="assustador" id="assustador"> Assustador
+					<input type="checkbox" name="emocionante" id="emocionante"> Emocionante
+					<br>
+					<br>
+					<input type="submit" value="Enviar">
+
+				</form>
+			</div>
+		</div>
+		<!-- **** ATIVIDADES 4ª AULA **** -->
+
+	</div>
+</body>
+<script src="./index.js"></script>
+<link href="./index.css" rel="stylesheet"></link>
+
+<datalist id="tickmarks">
+	<option value="0" />
+	<option value="1" />
+	<option value="2" />
+	<option value="3" />
+	<option value="4" />
+	<option value="5" />
+	<option value="6" />
+	<option value="7" />
+	<option value="8" />
+	<option value="9" />
+	<option value="10" />
+</datalist>
+
 </html>
