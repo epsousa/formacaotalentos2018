@@ -1,3 +1,7 @@
+$(function(){
+	$("#includeDivElementos").load("https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5/HTML5_element_list"); 
+  });
+
 function toggleForm(){
 	
 	$("#formDiv").toggle('fast');
@@ -57,23 +61,31 @@ function save(event){
 }
 
 function mudarAula(tela){
+	var divAula0 = document.getElementById("divAula0");
 	var divAula1 = document.getElementById("divAula1");
 	var divAula2 = document.getElementById("divAula2");
 	var divAula3 = document.getElementById("divAula3");
 	
+	var menuAula0 = document.getElementById("mnAula0");
 	var menuAula1 = document.getElementById("mnAula1");
 	var menuAula2 = document.getElementById("mnAula2");
 	var menuAula3 = document.getElementById("mnAula3");
 	
+	divAula0.style.display = "none";
 	divAula1.style.display = "none";
 	divAula2.style.display = "none";
 	divAula3.style.display = "none";
 	
+	menuAula0.className = "";
 	menuAula1.className = "";
 	menuAula2.className = "";
 	menuAula3.className = "";
 	
 	switch(tela){
+		case 0:
+			divAula0.style.display = "block";
+			menuAula0.className = "active";
+			break;
 		case 1:
 			divAula1.style.display = "block";
 			menuAula1.className = "active";
